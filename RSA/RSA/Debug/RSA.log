@@ -1,0 +1,4 @@
+﻿  Main.cpp
+E:\CST 407 Intro to Cryptography\Homework\RSA\RSA\RSA\Main.cpp(85,20): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+E:\CST 407 Intro to Cryptography\Homework\RSA\RSA\RSA\Main.cpp(105,19): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+  RSA.vcxproj -> E:\CST 407 Intro to Cryptography\Homework\RSA\RSA\Debug\RSA.exe
