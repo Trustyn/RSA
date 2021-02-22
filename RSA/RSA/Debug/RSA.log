@@ -1,6 +1,6 @@
 ﻿  Main.cpp
-D:\Cryptography\RSA\RSA\RSA\Main.cpp(19,1): warning C4326: return type of 'main' should be 'int' instead of 'unsigned long'
-D:\Cryptography\RSA\RSA\RSA\Main.cpp(90,20): warning C4244: '=': conversion from 'double' to 'unsigned long', possible loss of data
-D:\Cryptography\RSA\RSA\RSA\Main.cpp(111,19): warning C4244: '=': conversion from 'double' to 'unsigned long', possible loss of data
-D:\Cryptography\RSA\RSA\RSA\Main.cpp(43,16): warning C4101: 'track': unreferenced local variable
-  RSA.vcxproj -> D:\Cryptography\RSA\RSA\Debug\RSA.exe
+E:\CST 407 Intro to Cryptography\Homework\RSA\RSA\RSA\Main.cpp(11,1): warning C4326: return type of 'main' should be 'int' instead of 'unsigned long'
+E:\CST 407 Intro to Cryptography\Homework\RSA\RSA\RSA\Main.cpp(13,27): warning C4101: 'message_C': unreferenced local variable
+E:\CST 407 Intro to Cryptography\Homework\RSA\RSA\RSA\Main.cpp(13,38): warning C4101: 'userPublicKey_N': unreferenced local variable
+E:\CST 407 Intro to Cryptography\Homework\RSA\RSA\RSA\Main.cpp(13,55): warning C4101: 'userPublicKey_E': unreferenced local variable
+  RSA.vcxproj -> E:\CST 407 Intro to Cryptography\Homework\RSA\RSA\Debug\RSA.exe
