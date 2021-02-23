@@ -1,5 +1,4 @@
 ﻿  Main.cpp
-E:\CST 407 Intro to Cryptography\Homework\RSA\RSA\RSA\Main.cpp(11,1): warning C4326: return type of 'main' should be 'int' instead of 'unsigned long'
 E:\CST 407 Intro to Cryptography\Homework\RSA\RSA\RSA\Main.cpp(13,27): warning C4101: 'message_C': unreferenced local variable
 E:\CST 407 Intro to Cryptography\Homework\RSA\RSA\RSA\Main.cpp(13,38): warning C4101: 'userPublicKey_N': unreferenced local variable
 E:\CST 407 Intro to Cryptography\Homework\RSA\RSA\RSA\Main.cpp(13,55): warning C4101: 'userPublicKey_E': unreferenced local variable

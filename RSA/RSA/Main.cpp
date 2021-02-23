@@ -7,7 +7,7 @@ const unsigned long largePrime_P = 10007;
 const unsigned long largePrime_Q = 29881;
 const unsigned long publicKey_E = 7;
 
-unsigned long main()
+int main()
 {
 	unsigned long publicKey_N, privateKey_D, phi, track;
 	unsigned long message_P, message_C, userPublicKey_N, userPublicKey_E;
@@ -29,7 +29,6 @@ unsigned long main()
 		track = (publicKey_E * i) % phi;
 		if (track == 1)
 		{
-			cout << i << endl;
 			privateKey_D = i;
 			break;
 		}
@@ -74,10 +73,6 @@ unsigned long main()
 	for (unsigned long i = 0; i < privateKey_D; i++) {
 		plaintext = (plaintext * ciphertext) % publicKey_N;
 		//((1 * 115614610) ^ 170845303) % 299019167  == KEEP GETTING (81622366) SUPPOSED TO BE 23
-		if (plaintext == message_P) {
-			cout << plaintext << endl;
-			break;
-		}
 	}
 
 	//Output Plaintext
