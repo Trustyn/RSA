@@ -39,7 +39,6 @@ unsigned long main()
 		track = fmod((publicKey_E * i), phi);
 		if (track == 1)
 		{
-			cout << i << endl;
 			privateKey_D = i;
 			cout << privateKey_D << endl;
 			break;
