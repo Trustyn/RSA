@@ -4,18 +4,10 @@ using std::cout;
 using std::cin;
 using std::endl;
 
-unsigned long gcd(unsigned long a, unsigned long b) {
-	unsigned long t;
-	while (1) {
-		t = a % b;
-		if (t == 0)
-			return b;
-		a = b;
-		b = t;
-	}
-}
+//PROGRAM FOR SOME REASON DOES NOT DISPLAY CORRECT ANSWER IN VISUAL STUDIO.
+//USE https://www.onlinegdb.com/online_c++_compiler
 
-unsigned long main()
+int main()
 {	
 	unsigned long largePrime_P = 10007;
 	unsigned long largePrime_Q = 10009;
@@ -40,7 +32,7 @@ unsigned long main()
 		if (track == 1)
 		{
 			privateKey_D = i;
-			cout << privateKey_D << endl;
+			//cout << privateKey_D << endl;
 			break;
 		}
 	}
@@ -48,6 +40,9 @@ unsigned long main()
 	//Publish public keys
 	cout << "Key E is: " << publicKey_E << endl;
 	cout << "Key N is: " << publicKey_N << endl;
+
+	//Display D for assignment turn in purposes
+	cout << "Key D is: " << privateKey_D << endl;
 
 	unsigned long message_P = 0;
 
@@ -58,7 +53,6 @@ unsigned long main()
 	unsigned long userPublicKey_E = 0;
 	unsigned long userPublicKey_N = 0;
 	
-
 	//Compute to encrypt user plaintext.
 	unsigned long ciphertext = 1;
 	
@@ -70,27 +64,24 @@ unsigned long main()
 	cout << "Your ciphertext is: " << ciphertext << endl;
 	cout << endl;
 
-	unsigned long message_C = 0;
+	//unsigned long message_C = 0;
 
 	//Collect ciphertext
-	cout << "Please enter your ciphertext message: ";
-	cin >> message_C;
-	cout << endl;
+	//cout << "Please enter your ciphertext message: ";
+	//cin >> message_C;
+	//cout << endl;
 
 	//Compute to decrypt user ciphertext
 	unsigned long plaintext = 1;
 
 	
 	for (unsigned long i = 0; i < privateKey_D; ++i) {
-		plaintext = (plaintext * message_C) % publicKey_N;
+		plaintext = (plaintext * ciphertext) % publicKey_N;
 	}
 
 	//Output Plaintext
 	cout << "Your plaintext is: " << plaintext << endl;
 	cout << endl;
 
-
-
-	system("pause");
 	return 0;
 }
